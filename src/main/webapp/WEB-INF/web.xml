@@ -12,6 +12,10 @@
 	</servlet-mapping>
 	<context-param>
 		<param-name>javax.faces.FACELETS_SUFFIX</param-name>
-		<param-value>.jsp</param-value>
+		<param-value>.xhtml</param-value>
 	</context-param>
+	<listener>
+		<listener-class>org.apache.myfaces.webapp.StartupServletContextListener
+		</listener-class>
+	</listener>
 </web-app>
